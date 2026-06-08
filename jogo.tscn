@@ -1,5 +1,50 @@
 [gd_scene format=3 uid="uid://dif2xn5kf2su1"]
 
-[node name="jogo" type="Node2D" unique_id=189113352]
+[ext_resource type="Script" uid="uid://dbb82luvp53s3" path="res://jogo.gd" id="1_1ap6j"]
+[ext_resource type="Texture2D" uid="uid://dv7u0wdqeyyi7" path="res://fundo.jpg" id="2_qn35j"]
+[ext_resource type="Texture2D" uid="uid://cjynvsayn4p52" path="res://can-someone-explain-how-there-are-3-different-characters-v0-b68thj68t1ld1.webp" id="3_8c340"]
+[ext_resource type="Texture2D" uid="uid://biaxvrrr5vfm3" path="res://Captura de tela 2026-06-08 163942.png" id="4_45nkh"]
 
-[node name="fundo" type="Sprite2D" parent="." unique_id=856411163]
+[node name="jogo" type="Node2D" unique_id=1740597065]
+script = ExtResource("1_1ap6j")
+
+[node name="fundo" type="Sprite2D" parent="." unique_id=1768640197]
+position = Vector2(846, 326.50003)
+scale = Vector2(0.8396738, 1.1721014)
+texture = ExtResource("2_qn35j")
+
+[node name="fundo2" type="Sprite2D" parent="." unique_id=951698977]
+position = Vector2(308, 326.24997)
+scale = Vector2(0.82472825, 1.1711956)
+texture = ExtResource("2_qn35j")
+
+[node name="sol" type="Sprite2D" parent="." unique_id=583883794]
+position = Vector2(478.625, 105.125)
+scale = Vector2(0.34322914, 0.28697917)
+texture = ExtResource("3_8c340")
+
+[node name="sol2" type="Sprite2D" parent="." unique_id=1600492690]
+position = Vector2(1034, 105.00001)
+scale = Vector2(0.33541667, 0.30625)
+texture = ExtResource("3_8c340")
+
+[node name="nuvem" type="Sprite2D" parent="." unique_id=1752807492]
+position = Vector2(869, 317)
+scale = Vector2(0.20978262, 0.24716981)
+
+[node name="nuvem2" type="Sprite2D" parent="." unique_id=1288181167]
+
+[node name="chao" type="Sprite2D" parent="." unique_id=1146556226]
+position = Vector2(359, 591.00006)
+scale = Vector2(1, 1.6335616)
+texture = ExtResource("4_45nkh")
+
+[node name="chao2" type="Sprite2D" parent="." unique_id=54943164]
+position = Vector2(815.87506, 590.9375)
+scale = Vector2(0.9547051, 1.6455476)
+texture = ExtResource("4_45nkh")
+
+[node name="Corpochao" type="CollisionShape2D" parent="chao2" unique_id=5642930]
+disabled = true
+
+[node name="chaofisico" type="StaticBody2D" parent="." unique_id=2126513642]
