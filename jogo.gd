@@ -18,3 +18,7 @@ func _process(delta: float) -> void:
 		$chao.position.x = -1152 #coloque ele após a cena na direita
 	if $chao2.position.x < -1152:
 		$chao2.position.x = 1152
+		$Fundo.position.x   -= velocidade*delta*0.05
+		$Fundo2.position.x  -= velocidade*delta*0.05
+		$Chao.position.x    -= velocidade*delta*2
+		$Chao2.position.x   -= velocidade*delta*2
